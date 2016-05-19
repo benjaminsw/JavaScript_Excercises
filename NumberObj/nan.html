@@ -1,0 +1,24 @@
+<html>
+<head>
+  <script type="text/javascript">
+  function showValue(date)
+  {
+    var dayOfMonth = date;
+
+    if(dayOfMonth<1 || dayOfMonth>31)
+    {
+      dayOfMonth = Number.NaN
+      alert("day of month must be between 1 and 31.")
+    }
+    document.write("value of day of month "+dayOfMonth);
+  }
+  </script>
+</head>
+<body>
+  <p> click the following to see the result: </p>
+  <form>
+    <input type="text" name="date" value="">
+    <input type="submit" value="submit" onclick="showValue(date.value);"/>
+  </form>
+</body>
+</html>
