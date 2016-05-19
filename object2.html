@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>user-define objects</title>
+  <script type="text/javascript">
+  function book(title, auther){
+    this.title = title;
+    this.auther = auther;
+  }
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+  var myBook = new book("pearl","mohtashim");
+  document.write("print out my book<br>");
+  document.write("book title is "+ myBook.title +"<br>");
+  document.write("book auther is"+ myBook.auther +"<br>");
+  </script>
+</body>
+</html>
