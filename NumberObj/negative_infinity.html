@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script type="text/javascript">
+  function showValue()
+  {
+    var smallNumber = (-Number.MAX_VALUE)*2
+    if(smallNumber == Number.NEGATIVE_INFINITY){
+      alert("Value of smallNUmber: "+smallNumber);
+    }
+  }
+  </script>
+</head>
+<body>
+  <p>click the following to see the result</p>
+  <form>
+    <input type="button" value="click me" onclick="showValue();"/>
+  </form>
+</body>
+</html>
