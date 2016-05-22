@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>JavaScript String search() Method</title>
+</head>
+<body>
+  <script type="text/javascript">
+  document.write("This method executes the search for a match between a regular expression and this String object.<br><br>");
+  var re=/apples/gi;
+  var str = "Apples are rounds, and aplles are juicy.";
+  if(str.search(re)==-1){
+    document.write("Does not contain Apples");
+  }else{
+    document.write("Contain Apples");
+  }
+  </script>
+</body>
+</html>
