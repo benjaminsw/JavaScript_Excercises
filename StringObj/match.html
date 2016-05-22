@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>JavaScript String match() Method</title>
+</head>
+<body>
+  <script type="text/javascript">
+  document.write("This method is used to retrieve the matches when matching a string against a regular expression.<br><br>");
+  var str = "For more information, please read book chapter 3.4.5.1";
+  var re = /(chapter \d+(\.\d)*)/i;
+  var found = str.match(re);
+  document.write(found);
+  </script>
+</body>
+</html>
