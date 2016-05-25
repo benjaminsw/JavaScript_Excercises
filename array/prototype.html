@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>User-defined objec</title>
+  <script type="text/javascript">
+  function book(title,auther){
+    this.title = title;
+    this.auther = auther;
+  }
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+  var myBook = new book("Perl", "Mohtashim");
+  book.prototype.price = null;
+  myBook.price = 100;
+  document.write("Book title is "+myBook.title+"<br>");
+  document.write("Book auther is "+myBook.auther+"<br>");
+  document.write("Book price is "+myBook.price+"<br>");
+  </script>
+</body>
+</html>
