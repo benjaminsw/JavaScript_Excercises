@@ -4,6 +4,7 @@
 </head>
 <body>
   <script type="text/javascript">
+  document.write("Javascript array <b>reduceRight()</b> method applies a function simultaneously against two values of the array <b>(from right-to-left)</b> as to reduce it to a single value<br><br>")
   if(!Array.prototype.reduceRight)
   {
     Array.prototype.reduceRight=function(fun/*, initila*/)
@@ -43,7 +44,7 @@
     };
   }
   var total = [0, 1, 2, 3].reduceRight(function(a, b) { return a + b; });
-  document.write("total is : " + total ); 
+  document.write("total is : " + total );
   </script>
 </body>
 </html>
