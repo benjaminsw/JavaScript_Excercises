@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>JavaScript RegExp ignoreCase Property</title>
+</head>
+
+<body>
+<script type="text/javascript">
+document.write("ignoreCase is a read-only boolean property of RegExp objects. It specifies whether a particular regular expression performs case-insensitive matching, i.e., whether it was created with the \"i\" attribute.<br><br>");
+         var re = new RegExp("string");
+
+         if (re.ignoreCase){
+     document.write("Test1-ignoreCase propety is set");
+   }else{
+     document.write("Test1-ignoreCase propety is not set");
+   }
+         re = new RegExp("string", "i");
+
+         if(re.ignoreCase){
+    document.write("<br>Test2-ignoreCase property is set");
+  }else{
+    document.write("<br>Test2-ignoreCase property is not set");
+  }
+      </script>
+
+   </body>
+</html>
