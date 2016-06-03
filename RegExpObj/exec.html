@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>JavaScript RegExp exec Method</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var str="javascript is an interesting scripting langauge";
+  var re=new RegExp("script", "g");
+
+  var result=re.exec(str);
+  document.write("test1-returned value: "+result);
+
+  re=new RegExp("pushing","g");
+
+  var result=re.exec(str);
+  document.write("<br>test2-returned value: "+result);
+  </script>
+</body>
+</html>
