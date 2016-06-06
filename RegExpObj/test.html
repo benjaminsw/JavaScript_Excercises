@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>JavaScript RegExp test Method</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var str="javascript is an interesting scripting langauge";
+  var re=new RegExp("script","g");
+
+  var result=re.test(str);
+  document.write("test 1 - returned value: "+result);
+
+  re=new RegExp("pushing","g");
+  var result=re.test(str);
+  document.write("<br>test 2 - returned value: "+result);
+  </script>
+</body>
+</html>
