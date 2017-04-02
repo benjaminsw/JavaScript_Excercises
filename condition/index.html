@@ -26,8 +26,25 @@
 			var last = "Ross";
 
 			if((name == "Rick") && (last == "Ross")){
-				document.write(name + " " + last);
+				document.write(name + " " + last + "\n");
 			}
+			//switch statement
+			function checkArtist(artistName){
+				switch(artistName){
+					case "Dr.Dre":
+						document.write("Aftermath Records");
+						break;
+					case "Lil Wayne":
+						document.write("Cash Money");
+						break;
+					case "Diddy":
+						document.write("Bad boyz");
+						break;
+					default:
+						document.write("This is not part of our label");
+				}
+			}
+			checkArtist("Diddy");
 		</script>
 	</body>
 </html>
